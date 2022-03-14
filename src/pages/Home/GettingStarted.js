@@ -24,7 +24,7 @@ export default class GettingStarted extends Component {
                     <Col lg={3} md={6} className="mt-4 pt-2">
                             <Card className="border-0 features feature-clean course-feature p-4 overflow-hidden shadow text-center">
                                     <img src={QuiltStep1} className="img-fluid" alt="" />
-                                    <CardTitle className="title h5 text-dark">Connct your wallet</CardTitle>
+                                    <CardTitle className="title h5 text-dark">Connect your wallet</CardTitle>
                             </Card>
                         </Col>
 
