@@ -15,7 +15,7 @@ export default class Section extends Component {
                             <h4 className="heading fw-bold text-dark title-dark mb-3">Quilt is <span className='hero-span'>secure</span> social trading and <span className='hero-span'>messaging</span> application, built on <span className='hero-span bg-text'>blockchain</span></h4>
                             <h5 className="para-desc mx-auto text-success title-dark">The Future of Social Media in your hands</h5>
                             <div className="d-flex justify-content-left">
-                                <a href="https://quilt.chat" className="btn btn-success btn-pills">Launch app</a>
+                                <a href="https://app.quilt.chat" className="btn btn-success btn-pills">Launch app</a>
                             </div>
 
                         </div>
