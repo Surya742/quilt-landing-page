@@ -1,15 +1,11 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { withRouter } from "react-router";
-import {
-  Container,
-  Modal,
-  ModalBody,
-} from "reactstrap";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
+import { Container, Modal, ModalBody } from 'reactstrap';
 
 //Import images
-import logodark from "../../assets/images/Quilt.svg";
-import logolight from "../../assets/images/Quilt.svg";
+import logodark from '../../assets/images/Quilt.svg';
+import logolight from '../../assets/images/Quilt.svg';
 
 class Topbar extends Component {
   constructor(props) {
@@ -19,23 +15,23 @@ class Topbar extends Component {
       dropdownOpenShop: false,
       navLinks: [
         //Note : each child and nested child must have unique id
-        { id: 1, title: "Home", link: "/" },
+        { id: 1, title: 'Home', link: '/' },
         {
           id: 2,
-          title: "About",
-          link: "/",
+          title: 'About',
+          link: '/',
           isOpenSubMenu: false,
         },
         {
           id: 3,
-          title: "Team",
-          link: "/",
+          title: 'Team',
+          link: '/',
           isOpenSubMenu: false,
           child: [
-            { title: "Documentations", link: "/" },
-            { title: "Changelog", link: "/" },
-            { title: "Components", link: "/" },
-            { title: "Widget", link: "/" },
+            { title: 'Documentations', link: '/' },
+            { title: 'Changelog', link: '/' },
+            { title: 'Components', link: '/' },
+            { title: 'Widget', link: '/' },
           ],
         },
       ],
@@ -73,8 +69,8 @@ class Topbar extends Component {
 
   componentDidMount() {
     var matchingMenuItem = null;
-    var ul = document.getElementById("top-menu");
-    var items = ul.getElementsByTagName("a");
+    var ul = document.getElementById('top-menu');
+    var items = ul.getElementsByTagName('a');
     for (var i = 0; i < items.length; ++i) {
       if (this.props.location.pathname === items[i].pathname) {
         matchingMenuItem = items[i];
@@ -89,18 +85,18 @@ class Topbar extends Component {
   activateParentDropdown = (item) => {
     const parent = item.parentElement;
     if (parent) {
-      parent.classList.add("active"); // li
+      parent.classList.add('active'); // li
       const parent1 = parent.parentElement;
-      parent1.classList.add("active"); // li
+      parent1.classList.add('active'); // li
       if (parent1) {
         const parent2 = parent1.parentElement;
-        parent2.classList.add("active"); // li
+        parent2.classList.add('active'); // li
         if (parent2) {
           const parent3 = parent2.parentElement;
-          parent3.classList.add("active"); // li
+          parent3.classList.add('active'); // li
           if (parent3) {
             const parent4 = parent3.parentElement;
-            parent4.classList.add("active"); // li
+            parent4.classList.add('active'); // li
           }
         }
       }
@@ -113,7 +109,7 @@ class Topbar extends Component {
       //Match level 2 id
       tmpLink.id === level2_id
         ? (tmpLink.isOpenSubMenu = !tmpLink.isOpenSubMenu)
-        : false
+        : false,
     );
     this.setState({ navLinks: tmpLinks });
   };
@@ -124,13 +120,13 @@ class Topbar extends Component {
       //Match level 2 id
       tmpLink.id === level2_id
         ? tmpLink.child.map((tmpchild) =>
-          //if level1 id is matched then match level 3 id
-          tmpchild.id === level3_id
-            ? //if id is matched then update status(level 3 sub menu will be open)
-            (tmpchild.isOpenNestedSubMenu = !tmpchild.isOpenNestedSubMenu)
-            : (tmpchild.isOpenNestedSubMenu = false)
-        )
-        : false
+            //if level1 id is matched then match level 3 id
+            tmpchild.id === level3_id
+              ? //if id is matched then update status(level 3 sub menu will be open)
+                (tmpchild.isOpenNestedSubMenu = !tmpchild.isOpenNestedSubMenu)
+              : (tmpchild.isOpenNestedSubMenu = false),
+          )
+        : false,
     );
     this.setState({ navLinks: tmpLinks });
   };
@@ -143,33 +139,52 @@ class Topbar extends Component {
         <header id="topnav" className="defaultscroll sticky">
           <Container>
             <div>
-
               {this.props.hasDarkTopBar ? (
                 <a className="logo" href="index.html">
-                  <img src={logodark} height="24" className="logo-light-mode" alt="" />
-                  <img src={logolight} height="24" className="logo-dark-mode" alt="" />
+                  <img
+                    src={logodark}
+                    height="24"
+                    className="logo-light-mode"
+                    alt=""
+                  />
+                  <img
+                    src={logolight}
+                    height="24"
+                    className="logo-dark-mode"
+                    alt=""
+                  />
                 </a>
-              ) :
+              ) : (
                 <a className="logo" href="index.html">
                   <span className="logo-light-mode">
                     <img src={logodark} className="l-dark" height="24" alt="" />
-                    <img src={logolight} className="l-light" height="24" alt="" />
+                    <img
+                      src={logolight}
+                      className="l-light"
+                      height="24"
+                      alt=""
+                    />
                   </span>
-                  <img src={logolight} height="24" className="logo-dark-mode" alt="" />
+                  <img
+                    src={logolight}
+                    height="24"
+                    className="logo-dark-mode"
+                    alt=""
+                  />
                 </a>
-              }
+              )}
             </div>
-        
-                  <div className="buy-button">
-                    <Link
-                      to="https://app.quilt.chat"
-                      target="_blank"
-                      id="buyButton"
-                      className="btn btn-success btn-pills"
-                    >
-                      Launch App
-                    </Link>
-                  </div>
+
+            <div className="buy-button">
+              <Link
+                to="https://app.quilt.chat"
+                target="_blank"
+                id="buyButton"
+                className="btn btn-success btn-pills"
+              >
+                Launch App
+              </Link>
+            </div>
 
             <div className="menu-extras">
               <div className="menu-item">
@@ -177,7 +192,7 @@ class Topbar extends Component {
                   to="#"
                   onClick={this.toggleLine}
                   className={
-                    this.state.isOpen ? "navbar-toggle open" : "navbar-toggle"
+                    this.state.isOpen ? 'navbar-toggle open' : 'navbar-toggle'
                   }
                 >
                   <div className="lines">
@@ -191,7 +206,7 @@ class Topbar extends Component {
 
             <div
               id="navigation"
-              style={{ display: this.state.isOpen ? "block" : "none" }}
+              style={{ display: this.state.isOpen ? 'block' : 'none' }}
             >
               <ul className="navigation-menu" id="top-menu">
                 {this.state.navLinks.map((navLink, key) =>
@@ -214,8 +229,8 @@ class Topbar extends Component {
                         <ul
                           className={
                             navLink.isOpenSubMenu
-                              ? "submenu megamenu open"
-                              : "submenu megamenu"
+                              ? 'submenu megamenu open'
+                              : 'submenu megamenu'
                           }
                         >
                           <li>
@@ -223,11 +238,9 @@ class Topbar extends Component {
                               {navLink.child.map((item, childKey) =>
                                 item.id < 12 ? (
                                   <li key={childKey}>
-                                    <Link to={item.link}>
-                                      {item.title}
-                                    </Link>
+                                    <Link to={item.link}>{item.title}</Link>
                                   </li>
-                                ) : null
+                                ) : null,
                               )}
                             </ul>
                           </li>
@@ -245,7 +258,7 @@ class Topbar extends Component {
                                       ) : null}
                                     </Link>
                                   </li>
-                                ) : null
+                                ) : null,
                               )}
                             </ul>
                           </li>
@@ -273,7 +286,7 @@ class Topbar extends Component {
                                       ) : null}
                                     </Link>
                                   </li>
-                                ) : null
+                                ) : null,
                               )}
                             </ul>
                           </li>
@@ -297,7 +310,7 @@ class Topbar extends Component {
                                       ) : null}
                                     </Link>
                                   </li>
-                                ) : null
+                                ) : null,
                               )}
                             </ul>
                           </li>
@@ -321,7 +334,7 @@ class Topbar extends Component {
                                       ) : null}
                                     </Link>
                                   </li>
-                                ) : null
+                                ) : null,
                               )}
                             </ul>
                           </li>
@@ -330,7 +343,7 @@ class Topbar extends Component {
                         // if menu is not mega menu(1grid)
                         <ul
                           className={
-                            navLink.isOpenSubMenu ? "submenu open" : "submenu"
+                            navLink.isOpenSubMenu ? 'submenu open' : 'submenu'
                           }
                         >
                           {navLink.child.map((childArray, childKey) =>
@@ -343,11 +356,11 @@ class Topbar extends Component {
                                     event.preventDefault();
                                     this.openNestedBlock(
                                       navLink.id,
-                                      childArray.id
+                                      childArray.id,
                                     );
                                   }}
                                 >
-                                  {childArray.title}{" "}
+                                  {childArray.title}{' '}
                                   {childArray.isNew ? (
                                     <span className="badge badge-pill badge-success">
                                       Added
@@ -358,8 +371,8 @@ class Topbar extends Component {
                                 <ul
                                   className={
                                     childArray.isOpenNestedSubMenu
-                                      ? "submenu open"
-                                      : "submenu"
+                                      ? 'submenu open'
+                                      : 'submenu'
                                   }
                                 >
                                   {childArray.nestedChild.map(
@@ -367,7 +380,7 @@ class Topbar extends Component {
                                       // nested sub menu item - Level 3
                                       <li key={nestedKey}>
                                         <Link to={nestedChildArray.link}>
-                                          {nestedChildArray.title}{" "}
+                                          {nestedChildArray.title}{' '}
                                           {nestedChildArray.isNewPage ? (
                                             <span className="badge badge-danger rounded">
                                               NEW
@@ -380,7 +393,7 @@ class Topbar extends Component {
                                           ) : null}
                                         </Link>
                                       </li>
-                                    )
+                                    ),
                                   )}
                                 </ul>
                               </li>
@@ -390,7 +403,7 @@ class Topbar extends Component {
                                   {childArray.title}
                                 </Link>
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       )}
@@ -399,12 +412,12 @@ class Topbar extends Component {
                     <li key={key}>
                       <Link to={navLink.link}>{navLink.title}</Link>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
               <div className="buy-menu-btn d-none">
                 <Link
-                  to="https://quilt.chat"
+                  to="https://app.quilt.chat"
                   target="_blank"
                   id="buyButton"
                   className="btn btn-success pills"
@@ -427,7 +440,7 @@ class Topbar extends Component {
             <div className="text-center">
               <div
                 className="icon d-flex align-items-center justify-content-center bg-soft-danger rounded-circle mx-auto"
-                style={{ height: "95px", width: "95px" }}
+                style={{ height: '95px', width: '95px' }}
               >
                 <h1 className="mb-0">
                   <i className="uil uil-heart-break align-middle"></i>
@@ -447,7 +460,6 @@ class Topbar extends Component {
             </div>
           </ModalBody>
         </Modal>
-
       </React.Fragment>
     );
   }
