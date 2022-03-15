@@ -10,9 +10,9 @@ class Topbar extends Component {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "about", navheading: "About" },
-        { id: 2, idnm: "roadmap", navheading: "Roadmap" },
-        { id: 3, idnm: "team", navheading: "Team" },
+        { id: 1, idnm: "about", navheading: "About", href: "https://medium.com/@quilt.chat" },
+        { id: 2, idnm: "roadmap", navheading: "Roadmap", href: "https://band-reaper-0df.notion.site/85457568a6d64d8889c4a3124428ceab?v=2da7f583124c44c0aa02ac11e715553e" },
+        { id: 3, idnm: "team", navheading: "Team", href: "https://twitter.com/Quilt_chat" },
       ],
       isOpen: false,
     };
@@ -36,7 +36,7 @@ class Topbar extends Component {
             </Link>
             <div className="buy-button">
               <a
-                href="https://quilt.chat"
+                href="https://app.quilt.chat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-success btn-pills"
@@ -74,7 +74,7 @@ class Topbar extends Component {
                 <ul className="navigation-menu">
                   {this.state.navItems.map((item, key) => (
                     <li key={key} className="has-submenu">
-                      <a href={"#" + item.idnm}> {item.navheading}</a>
+                      <a href={item.href}> {item.navheading}</a>
                     </li>
                   ))}
                 </ul>

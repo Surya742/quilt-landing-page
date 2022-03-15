@@ -1752,7 +1752,7 @@ button:not(:disabled) {
   background-color: #fff !important;
 }
 .social-icon li a {
-  color: #3c4858;
+  fill:#00CC99;
   border: 1px solid #3c4858;
   display: inline-block;
   height: 32px;
@@ -1777,15 +1777,16 @@ button:not(:disabled) {
 
 .social-icon li a:hover .fea-social {
   fill: #2f55d4;
+  color: #ffffff !important;
 }
 
 .social-icon.social li a {
-  color: #adb5bd;
+  color: #fffs;
   border-color: #adb5bd;
 }
 
 .social-icon.foot-social-icon li a {
-  color: #adb5bd;
+  color: #ffffff !important;
   border-color: #283353;
 }
 

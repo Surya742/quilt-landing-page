@@ -183,7 +183,7 @@
 }
 
 .social-icon li a:hover .fea-social {
-    fill: #6dc77a;
+    fill: #fff;
 }
 
 .bg-circle-gradiant {
@@ -224,12 +224,12 @@
 
 .play-icon i:hover {
     -webkit-text-stroke: 2px #6dc77a;
-    -webkit-text-fill-color: #6dc77a;
+    -webkit-text-fill-color: #fff;
 }
 
 a.text-primary:hover, 
 a.text-primary:focus {
-    color: #5bc069 !important;
+    color: #fff !important;
 }
 
 .btn-primary:hover, 

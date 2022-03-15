@@ -1,7 +1,6 @@
     import React, { Component } from 'react'
 import { Col, Container, Row } from 'reactstrap';
 import Phone from '../../assets/images/Phone.svg';
-import QuiltStep4 from '../../assets/images/Quilt_Steps_S4.svg';
 
 export default class Section extends Component {
     render() {

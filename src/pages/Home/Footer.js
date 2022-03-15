@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form, Input, Button } from "reactstrap";
-import { FaMediumM, FaDiscord } from 'react-icons/fa';
+import { FaMediumM, FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 //Import Images
 import logolight from "../../assets/images/Quilt.svg";
 import logodark from "../../assets/images/Quilt.svg";
 //Import Icons
-import FeatherIcon from "feather-icons-react";
 import SubscribeFrom from "react-mailchimp-subscribe";
 
  class Footer extends Component {
@@ -64,14 +63,14 @@ import SubscribeFrom from "react-mailchimp-subscribe";
                 <ul className={this.props.isLight ? "list-unstyled social-icon social mb-0 m t-4" : "list-unstyled social-icon foot-social-icon mb-0 mt-4"}>
                   
                   <li className="list-inline-item me-1">
-                    <a href="https://medium.com/" className="rounded" target="_blank">
+                    <a href="https://medium.com/@quilt.chat" className="icon-hover rounded" target="_blank">
                     <FaMediumM className="fea icon-sm fea-social text-light"/>
                     </a>
                   </li>
 
                   <li className="list-inline-item me-1">
-                    <a href="https://github.com/quilt-dao" className="rounded" target="_blank">
-                      <FeatherIcon
+                    <a href="https://github.com/quilt-dao" className="icon-hover rounded" target="_blank">
+                      <FaGithub
                         icon="github"
                         className="fea icon-sm fea-social text-light"
                       />
@@ -79,8 +78,8 @@ import SubscribeFrom from "react-mailchimp-subscribe";
                   </li>
 
                   <li className="list-inline-item me-1">
-                    <a href="https://twitter.com/Quilt_chat" target="_blank" className="rounded">
-                      <FeatherIcon
+                    <a href="https://twitter.com/Quilt_chat" target="_blank" className="icon-hover rounded">
+                      <FaTwitter
                         icon="twitter"
                         className="fea icon-sm fea-social text-light"
                       />
@@ -88,7 +87,7 @@ import SubscribeFrom from "react-mailchimp-subscribe";
                   </li>
 
                   <li className="list-inline-item me-1">
-                    <a href="https://discord.gg/u3RjUUwm5J" target="_blank" className="rounded">
+                    <a href="https://discord.gg/u3RjUUwm5J" target="_blank" className="icon-hover   rounded">
                       <FaDiscord
                         icon="discord"
                         className="fea icon-sm fea-social text-light"
@@ -119,8 +118,8 @@ import SubscribeFrom from "react-mailchimp-subscribe";
             </Row>
             <Row>    
             <Col
-                lg="3"
-                md="3"
+                lg="6"
+                md="6"
                 xs="12"
                 className="mt-4 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
