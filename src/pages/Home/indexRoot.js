@@ -68,7 +68,7 @@ class IndexRoot extends Component {
       <React.Fragment>
         <Suspense fallback={this.Loader()}>
           <Topbar />
-          <section style={{ background: `url(${bg}) center` }}>
+          <section style={{backgroundColor: "white"}}>
             <Section />
             <Main />
           </section>

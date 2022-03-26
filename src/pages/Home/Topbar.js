@@ -3,16 +3,17 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import ScrollspyNav from "./scrollSpy";
 
-import Quilt from "../../assets/images/Quilt.svg";
+import QuiltLogo from '../../assets/images/newUI/quilt-new-logo.svg';
+// import MsgFrame from '../../assets/images/newUI/Msg-frame.svg';
 
 class Topbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "about", navheading: "About", href: "https://medium.com/@quilt.chat" },
-        { id: 2, idnm: "roadmap", navheading: "Roadmap", href: "https://band-reaper-0df.notion.site/85457568a6d64d8889c4a3124428ceab?v=2da7f583124c44c0aa02ac11e715553e" },
-        { id: 3, idnm: "team", navheading: "Team", href: "https://twitter.com/Quilt_chat" },
+        { id: 1, idnm: "home", navheading: "Home", href: "https://medium.com/@quilt.chat" },
+        { id: 2, idnm: "blog", navheading: "Blog", href: "https://band-reaper-0df.notion.site/85457568a6d64d8889c4a3124428ceab?v=2da7f583124c44c0aa02ac11e715553e" },
+        // { id: 3, idnm: "team", navheading: "Team", href: "https://twitter.com/Quilt_chat" },
       ],
       isOpen: false,
     };
@@ -32,7 +33,7 @@ class Topbar extends Component {
         <header id="topnav" className="defaultscroll sticky">
           <Container>
             <Link className="logo" to="/">
-              <img src={Quilt} height="24" alt="" />
+              <img src={QuiltLogo} height="38" alt="" />
             </Link>
             <div className="buy-button">
               <a
@@ -69,9 +70,9 @@ class Topbar extends Component {
             >
               <div
                 id="navigation"
-                style={{ display: this.state.isOpen ? "block" : "none" }}
+                style={{ display: this.state.isOpen ? "block" : "none", color: "white" }}
               >
-                <ul className="navigation-menu">
+                <ul className="navigation-menu nav-items">
                   {this.state.navItems.map((item, key) => (
                     <li key={key} className="has-submenu">
                       <a href={item.href}> {item.navheading}</a>
