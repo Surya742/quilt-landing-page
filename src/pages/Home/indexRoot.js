@@ -3,6 +3,7 @@ import React, { Component, Suspense } from 'react';
 import Section from './Section';
 import GettingStarted from './GettingStarted';
 import Main from './Main';
+import Carosel from './Carosel';
 import bg from '../../assets/images/bg.svg';
 
 // Scroll up button
@@ -71,6 +72,10 @@ class IndexRoot extends Component {
           <section style={{backgroundColor: "white"}}>
             <Section />
             <Main />
+            
+          </section>
+          <section style={{backgroundColor: "#212121", padding: "5%"}}>
+            <Carosel />
           </section>
           <section className="section">
             <GettingStarted />

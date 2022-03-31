@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import { Carousel } from 'react-bootstrap';
 //import images
 import LaptopChat from '../../assets/images/Laptop.png';
 import { Col, Container, Row } from 'reactstrap';
@@ -8,7 +10,10 @@ import TiltLaptop from '../../assets/images/newUI/laptop-1.svg';
 import HollowCube from '../../assets/images/newUI/hollowCube.svg';
 import BlackStrip from '../../assets/images/newUI/black-strip.svg';
 import GreenStrip from '../../assets/images/newUI/green-strip.svg';
+import sliderRec from '../../assets/images/newUI/slider-1-rec.svg';
+import sliderFolder from '../../assets/images/newUI/slider-1-folder.svg';
 import '../../assets/css/newUI/title1.css';
+
 
 export default class Main extends Component {
   render() {
@@ -40,59 +45,64 @@ export default class Main extends Component {
           </Row>
         </Container>
 
-        <Container className="mt-100 mt-60">
-          <Row className="align-items-center">
-            <Col
-              lg={7}
-              md={6}
-              className="order-2 order-md-1 mt-4 mt-sm-0 pt-sm-0"
-            >
-              <div className="section-title me-lg-5">
-                <h4 className="title mb-4">WHY quilt</h4>
-                <ul className="list-unstyled text-dark">
-                  <li className="mb-0">
-                    <span className="text-success h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    You <span className="text-success">Own</span> and{' '}
-                    <span className="text-success">Control</span> Your{' '}
-                    <span className="text-success">Data</span>
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-success h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    We are Built on Blockchain Technology
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-success h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    We Are Built Using <span className="text-success"></span>End
-                    to <span className="text-success"></span>End Encryption{' '}
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-success h5 me-2">
-                      <i className="uil uil-check-circle align-middle"></i>
-                    </span>
-                    We Support NFT Trades, Crypto Transactions, and Community
-                    Building
-                  </li>
-                </ul>
-                <a
-                  href="https://medium.com/@quilt.chat"
-                  className="mt-3 h6 btn btn-success btn-pills"
-                >
-                  Find Out More <i className="uil uil-angle-right-b"></i>
-                </a>
-              </div>
-            </Col>
+        {/* <Container className="mt-100 mb-100">
+          <Row className="">
 
-            <Col lg={5} md={6} className="order-1 order-md-2">
-              <img src={QuiltStep3} className="main-ill img-fluid" alt="" />
-            </Col>
+            <Carousel className="carousel-body">
+              <Carousel.Item>
+                <img
+                  className="silder-rec"
+                  src={sliderRec}
+                  alt="First slide"
+                />
+                <img
+                  className="slider-folder"
+                  src={sliderFolder}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className="silder-rec"
+                  src={sliderRec}
+                  alt="Second slide"
+                />
+                <img
+                  className="slider-folder"
+                  src={sliderFolder}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className="silder-rec"
+                  src={sliderRec}
+                  alt="Third slide"
+                />
+                <img
+                  className="slider-folder"
+                  src={sliderFolder}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+            
           </Row>
-        </Container>
+        </Container> */}
       </React.Fragment>
     );
   }
