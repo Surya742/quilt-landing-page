@@ -4,6 +4,7 @@ import Section from './Section';
 import GettingStarted from './GettingStarted';
 import Main from './Main';
 import Carosel from './Carosel';
+import Carosel2 from './Carosel2';
 import bg from '../../assets/images/bg.svg';
 
 // Scroll up button
@@ -76,6 +77,9 @@ class IndexRoot extends Component {
           </section>
           <section style={{backgroundColor: "#212121", padding: "5%"}}>
             <Carosel />
+          </section>
+          <section style={{backgroundColor: "white", padding: "5%"}}>
+            <Carosel2 />
           </section>
           <section className="section">
             <GettingStarted />
