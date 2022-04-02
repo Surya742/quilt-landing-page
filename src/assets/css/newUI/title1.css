@@ -149,3 +149,44 @@
     width: 100%;
     margin-bottom: 6%;
 }
+
+.greenBox {
+    width: 40%;
+    position: relative;
+    left: -30%;
+}
+
+.bwFace {
+    width: 40%;
+    position: relative;
+    left: 60%;
+    margin-top: -60%;
+}
+
+.greenDesc {
+    position: relative;
+    left: 30%;
+    color: white;
+    margin-top: -38%;
+}
+
+.bwFace2 {
+    width: 40%;
+    position: relative;
+    left: -20%;
+    margin-top: -20%;
+}
+
+.bwFace3 {
+    width: 40%;
+    position: relative;
+    left: 60%;
+    margin-top: -30%;
+}
+
+.bwFace4 {
+    width: 40%;
+    position: relative;
+    left: -55%;
+    margin-top: -30%;
+}

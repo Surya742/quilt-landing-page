@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Card, CardBody, CardTitle, Col, Container, Row } from 'reactstrap';
+import '../../assets/css/newUI/title1.css';
 
-import QuiltStep1 from '../../assets/images/Quilt_Steps_S1.svg';
-import QuiltStep2 from '../../assets/images/Quilt_Steps_S2.svg';
-import QuiltStep3 from '../../assets/images/Quilt_Steps_S3.svg';
-import QuiltStep4 from '../../assets/images/Quilt_Steps_S4.svg';
-
-
+import GreenBox from '../../assets/images/newUI/greenBox.svg';
+import bwFace from '../../assets/images/newUI/bwFace.svg';
+import bwFace2 from '../../assets/images/newUI/bwFace2.svg';
+import bwFace3 from '../../assets/images/newUI/bwFace3.svg';
+import bwFace4 from '../../assets/images/newUI/bwFace4.svg';
 
 //Import Components
 import SectionTitle from "../../components/Shared/SectionTitle";
@@ -16,40 +16,16 @@ export default class GettingStarted extends Component {
     render() {
         return (
             <React.Fragment>
-                    <SectionTitle
-                        title="Getting Started"
-                    />
-
                     <Row className="d-flex justify-content-around p-5">
-                    <Col lg={3} md={6} className="mt-4 pt-2">
-                            <Card className="border-0 features feature-clean course-feature p-4 overflow-hidden shadow text-center">
-                                    <img src={QuiltStep1} className="img-fluid" alt="" />
-                                    <CardTitle className="title h5 text-dark">Connect your wallet</CardTitle>
-                            </Card>
-                        </Col>
-
-                        <Col lg={3} md={6} className="mt-4 pt-2">
-                            <Card className="border-0 features feature-clean course-feature p-4 overflow-hidden shadow text-center">
-                                    <img src={QuiltStep3} className="img-fluid" alt="" />
-                                    <CardTitle className="title h5 text-dark">Generate privacy keys</CardTitle>
-                            </Card>
-                        </Col>
-
-
-                        <Col lg={3} md={6} className="mt-4 pt-2">
-                            <Card className="border-0 features feature-clean course-feature p-4 overflow-hidden shadow text-center">
-                                    <img src={QuiltStep2} className="img-fluid" alt="" />
-                                    <CardTitle className="title h5 text-dark">Add friends</CardTitle>
-                            </Card>
-                        </Col>
-
-                        <Col lg={3} md={6} className="mt-4 pt-2">
-                            <Card className="border-0 features feature-clean course-feature p-4 overflow-hidden shadow text-center">
-                                <img src={QuiltStep4} className="img-fluid" alt="" />
-                                <CardTitle className="title h5 text-dark">Send Messages</CardTitle>
-                            </Card>
-                        </Col>
-
+                        <img src={GreenBox} alt="" className="greenBox"/>
+                        <div className="greenDesc">
+                            <h1>Chandan<span style={{display: 'block', marginTop: "-2%", color: '#00E467'}}> Das</span></h1>
+                            <p>Blockchain Developer</p>
+                        </div>
+                        <img src={bwFace} alt="" className="bwFace"/>
+                        <img src={bwFace2} alt="" className="bwFace2"/>
+                        <img src={bwFace3} alt="" className="bwFace3"/>
+                        <img src={bwFace4} alt="" className="bwFace4"/>
                     </Row>
             </React.Fragment>
         )

@@ -81,7 +81,7 @@ class IndexRoot extends Component {
           <section style={{backgroundColor: "white", padding: "5%"}}>
             <Carosel2 />
           </section>
-          <section className="section">
+          <section className="section" style={{backgroundColor: "#212121", padding: "5%", height: "800px"}}>
             <GettingStarted />
           </section>
           <Footer />
