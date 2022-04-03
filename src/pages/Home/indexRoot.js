@@ -2,6 +2,7 @@
 import React, { Component, Suspense } from 'react';
 import Section from './Section';
 import GettingStarted from './GettingStarted';
+import OurJourney from './OurJourney';
 import Main from './Main';
 import Carosel from './Carosel';
 import Carosel2 from './Carosel2';
@@ -83,6 +84,9 @@ class IndexRoot extends Component {
           </section>
           <section className="section" style={{backgroundColor: "#212121", padding: "5%", height: "800px"}}>
             <GettingStarted />
+          </section>
+          <section className="section" style={{backgroundColor: "#00E467", padding: "5%", height: "800px"}}>
+            <OurJourney />
           </section>
           <Footer />
           <ScrollUpButton
