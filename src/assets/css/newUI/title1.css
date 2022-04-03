@@ -218,3 +218,19 @@
     left: 51%;
     margin-top: -35%;
 }
+
+.foot-head {
+    padding-top: 5%;
+    font-weight: bold;
+}
+
+.foot-p {
+    width: 80%;
+}
+
+.foot-list {
+    margin-top: -26%;
+    position: relative;
+    left: 51%;
+    padding-bottom: 12%;
+}

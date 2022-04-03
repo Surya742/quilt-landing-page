@@ -88,7 +88,9 @@ class IndexRoot extends Component {
           <section className="section" style={{backgroundColor: "#00E467", padding: "5%", height: "800px"}}>
             <OurJourney />
           </section>
-          <Footer />
+          <section style={{backgroundColor: "#212121"}}>
+           <Footer />
+          </section>
           <ScrollUpButton
             ContainerClassName="classForContainer"
             style={{ height: 36, width: 36 }}
