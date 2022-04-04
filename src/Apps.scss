@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import './assets/scss/custom.scss';
 
@@ -12,3 +15,7 @@
 
 // Import Dark Mode
 // @import './assets/scss/style-dark.scss';
+
+body {
+  //   font-family: 'Ubuntu', sans-serif;
+}
