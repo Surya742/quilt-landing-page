@@ -12,8 +12,8 @@ export default class Section extends Component {
                 <section className="bg-home d-flex align-items-center" style={{ backgroundColor: '#212121' }}>
                     <Container>
                         <div className="title-heading text-left mt-5 pt-4 relative z-20">
-                            <img src={MsgFrame} className="h-[400px] absolute -top-[10rem] left-12 blur-[2px] md:h-[475px] lg:h-[738px] lg:-top-[20rem] lg:left-0 2xl:-left-40" alt="" />
-                            <h4 className="text-white font-bold relative left-20 z-20 bottom-28 hero-heading md:bottom-[5.5rem] md:left-18 2xl:-left-20 lg:bottom-[13rem]">Making <br /> Blockchain <br /> Social</h4>
+                            <img src={MsgFrame} className="h-[400px] absolute -top-[10rem] left-12 blur-[2px] md:h-[475px] lg:h-[738px] lg:left-0 2xl:-left-40 lg:-top-[15rem]" alt="" />
+                            <h4 className="text-white font-bold relative left-20 z-20 bottom-28 hero-heading md:bottom-[5.5rem] md:left-18 2xl:-left-20 lg:bottom-[8rem]">Making <br /> Blockchain <br /> Social</h4>
                         </div>
                         <img src={HollowCube} className="Hollo1" alt="" />
                         <img src={HollowCube} className="Hollo1" alt="" />

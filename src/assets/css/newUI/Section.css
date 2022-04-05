@@ -8,19 +8,20 @@
 }
 
 div .hero-heading {
-  font-size: 60px !important;
+  font-size: 50px !important;
   line-height: 70px;
 }
 
 @media screen and (min-width: 768px) {
   div .hero-heading {
-    font-size: 70px !important;
+    font-size: 60px !important;
+    line-height: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   div .hero-heading {
-    font-size: 100px !important;
+    font-size: 90px !important;
     line-height: 120px;
   }
 }
