@@ -9,7 +9,7 @@ export default class Section extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="bg-home d-flex align-items-center" style={{ backgroundColor: '#212121' }}>
+                <section className="bg-home d-flex align-items-center rounded-bl-[15rem]" style={{ backgroundColor: '#212121' }}>
                     <Container>
                         <div className="title-heading text-left mt-5 pt-4 relative z-20">
                             <img src={MsgFrame} className="h-[400px] absolute -top-[10rem] left-12 blur-[2px] md:h-[475px] lg:h-[738px] lg:left-0 2xl:-left-40 lg:-top-[15rem]" alt="" />

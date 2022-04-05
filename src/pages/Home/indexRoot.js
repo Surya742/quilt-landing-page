@@ -9,8 +9,6 @@ import Carosel2 from './Carosel2';
 import bg from '../../assets/images/bg.svg';
 
 // Scroll up button
-import ScrollUpButton from 'react-scroll-up-button';
-
 //Import Icons
 import FeatherIcon from 'feather-icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -71,33 +69,27 @@ class IndexRoot extends Component {
       <React.Fragment>
         <Suspense fallback={this.Loader()}>
           <Topbar />
-          <section style={{backgroundColor: "white"}}>
+          <section style={{ backgroundColor: "white" }}>
             <Section />
             <Main />
-            
+
           </section>
-          <section style={{backgroundColor: "#212121", padding: "5%"}}>
+          <section style={{ backgroundColor: "#212121", padding: "5%" }}>
             <Carosel />
           </section>
-          <section style={{backgroundColor: "white", padding: "5%"}}>
+          <section style={{ backgroundColor: "white", padding: "5%" }}>
             <Carosel2 />
           </section>
-          <section className="section" style={{backgroundColor: "#212121", padding: "5%", height: "800px"}}>
+          <section className="section" style={{ backgroundColor: "#212121", padding: "5%", height: "800px" }}>
             <GettingStarted />
           </section>
-          <section className="section" style={{backgroundColor: "#00E467", padding: "5%", height: "800px"}}>
+          <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", height: "800px" }}>
             <OurJourney />
           </section>
-          <section style={{backgroundColor: "#212121"}}>
-           <Footer />
+          <section style={{ backgroundColor: "#212121" }}>
+            <Footer />
           </section>
-          <ScrollUpButton
-            ContainerClassName="classForContainer"
-            style={{ height: 36, width: 36 }}
-            TransitionClassName="classForTransition"
-          >
-            <CustomDot />
-          </ScrollUpButton>
+
         </Suspense>
       </React.Fragment>
     );

@@ -30,7 +30,7 @@ class Topbar extends Component {
     });
     return (
       <React.Fragment>
-        <header id="" className="defaultscroll sticky bg-[#212121] top-0 z-[999]">
+        <header id="" className="defaultscroll sticky bg-[#212121] top-0 z-[999] shadow-md">
           <Container className="py-4 flex items-center justify-between">
             <Link className="logo" to="/">
               <img src={QuiltLogo} height="38" alt="" />

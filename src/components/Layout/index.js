@@ -1,6 +1,5 @@
 import React, { Component, Suspense } from "react";
 import { withRouter } from "react-router-dom";
-import ScrollUpButton from "react-scroll-up-button";
 import ThemeSwitcher from "./ThemeSwitcher";
 import FeatherIcon from "feather-icons-react";
 
@@ -35,16 +34,9 @@ class Layout extends Component {
     return (
       <React.Fragment>
         <Suspense fallback={Loader()}>
-            <Topbar hasDarkTopBar={this.props.hasDarkTopBar} />
+          <Topbar hasDarkTopBar={this.props.hasDarkTopBar} />
 
-            <Footer />;
-          <ScrollUpButton
-            ContainerClassName="classForContainer"
-            style={{ height: 36, width: 36 }}
-            TransitionClassName="classForTransition"
-          >
-            <CustomDot />
-          </ScrollUpButton>
+          <Footer />
           <ThemeSwitcher />
         </Suspense>
       </React.Fragment>
