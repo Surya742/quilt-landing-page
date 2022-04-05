@@ -11,53 +11,47 @@ export default class Section extends Component {
             <React.Fragment>
                 <section className="bg-home d-flex align-items-center" style={{ backgroundColor: '#212121' }}>
                     <Container>
-                        <Row className="justify-content-center">
-                            <Col lg={5} xs={12}>
-                                <div className="title-heading text-left mt-5 pt-4" style={{ width: '40%' }}>
-                                    <img src={MsgFrame} className="MsgFrameBox" alt="" />
-                                    <h4 className="heading fw-bolder text-light title-light mb-3">Making Blockchain Social</h4>
-                                </div>
-                            </Col>
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
-                            <img src={HollowCube} className="Hollo1" alt="" />
+                        <div className="title-heading text-left mt-5 pt-4 relative z-20">
+                            <img src={MsgFrame} className="h-[400px] absolute -top-[10rem] left-12 blur-[2px] md:h-[475px] lg:h-[738px] lg:-top-[20rem] lg:left-0 2xl:-left-40" alt="" />
+                            <h4 className="text-white font-bold relative left-20 z-20 bottom-28 hero-heading md:bottom-[5.5rem] md:left-18 2xl:-left-20 lg:bottom-[13rem]">Making <br /> Blockchain <br /> Social</h4>
+                        </div>
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
+                        <img src={HollowCube} className="Hollo1" alt="" />
 
-                            <img src={Cube1} className="Cube1" alt="" />
-                            <img src={Cube1} className="Cube1" alt="" />
+                        <img src={Cube1} className="Cube1" alt="" />
+                        <img src={Cube1} className="Cube1" alt="" />
 
-                            <img src={Cube1} className="Cube2" alt="" />
-                            <img src={Cube1} className="Cube2" alt="" />
+                        <img src={Cube1} className="Cube2" alt="" />
+                        <img src={Cube1} className="Cube2" alt="" />
 
-                            <img src={Cube1} className="Cube3" alt="" />
-                            <img src={Cube1} className="Cube3" alt="" />
+                        <img src={Cube1} className="Cube3" alt="" />
+                        <img src={Cube1} className="Cube3" alt="" />
 
-                            <img src={Cube1} className="Cube4" alt="" />
-                            <img src={Cube1} className="Cube4" alt="" />
+                        <img src={Cube1} className="Cube4" alt="" />
+                        <img src={Cube1} className="Cube4" alt="" />
 
-                            <img src={Cube1} className="Cube5" alt="" />
-                            <img src={Cube1} className="Cube5" alt="" />
+                        <img src={Cube1} className="Cube5" alt="" />
+                        <img src={Cube1} className="Cube5" alt="" />
 
-                            <img src={Cube1} className="Cube6" alt="" />
-                            <img src={Cube1} className="Cube6" alt="" />
+                        <img src={Cube1} className="Cube6" alt="" />
+                        <img src={Cube1} className="Cube6" alt="" />
 
-                            <img src={Cube1} className="Cube7" alt="" />
-                            <img src={Cube1} className="Cube7" alt="" />
-                            <Col lg={7} xs={12} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                            </Col>
-                        </Row>
+                        <img src={Cube1} className="Cube7" alt="" />
+                        <img src={Cube1} className="Cube7" alt="" />
                     </Container>
                 </section>
             </React.Fragment>
