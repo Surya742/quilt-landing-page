@@ -33,7 +33,7 @@ class Topbar extends Component {
         <header id="" className="defaultscroll sticky bg-[#212121] top-0 z-[999] shadow-md">
           <Container className="py-4 flex items-center justify-between">
             <Link className="logo" to="/">
-              <img src={QuiltLogo} height="38" alt="" />
+              <img src={QuiltLogo} className='h-8 lg:h-12' alt="" />
             </Link>
 
             <div className="flex items-center gap-8">
@@ -49,7 +49,7 @@ class Topbar extends Component {
                 href="https://app.quilt.chat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#00E467] text-black rounded-[20px] font-bold px-4 py-2 hover:bg-[#05bb57ea] duration-200 transition-colors"
+                className="bg-[#00E467] text-black rounded-[20px] font-bold hover:bg-[#05bb57ea] duration-200 transition-colors text-sm p-2"
               >
                 Launch App
               </a>

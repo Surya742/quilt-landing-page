@@ -19,13 +19,13 @@ export default class Main extends Component {
   render() {
     return (
       <React.Fragment style={{ backgroundColor: "white" }}>
-        <div className="mt-100 mt-60 md:h-screen grid grid-cols-1 w-screen justify-items-end items-center lg:grid-cols-2 px-4 py-8">
+        <div className="mt-100 mt-60 md:h-screen grid grid-cols-1 w-screen justify-items-end items-center lg:grid-cols-2 px-4 py-8 relative overflow-hidden m-0">
+          <img src={BlackStrip} className="black-strip main-strip" alt="" />
+          <img src={GreenStrip} className="green-strip main-strip" alt="" />
           <div className='justify-self-end relative'>
             <img src={TiltLaptop} className="lg:h-[711px] -rotate-6" alt="" />
             <img src={HollowCube} className="lappy-cube" alt="" />
 
-            {/* <img src={BlackStrip} className="black-strip" alt="" />
-            <img src={GreenStrip} className="green-strip" alt="" /> */}
           </div>
 
           <div className="section-title text-left justify-self-start">

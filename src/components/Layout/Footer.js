@@ -56,7 +56,7 @@ class Footer extends Component {
                   Sign up for the Updates
                 </h5>
                 <p className={this.props.isLight ? "mt-4 text-light" : "mt-4"}>
-                We'll send you fresh news about our platform, including new features and opportunities for the community.
+                  We'll send you fresh news about our platform, including new features and opportunities for the community.
                 </p>
 
                 <ul className={this.props.isLight ? "list-unstyled social-icon social mb-0 m t-4" : "list-unstyled social-icon foot-social-icon mb-0 mt-4"}>
@@ -95,7 +95,7 @@ class Footer extends Component {
                 </ul>
               </Col>
 
-  
+
 
               <Col
                 lg="6"
@@ -104,36 +104,36 @@ class Footer extends Component {
                 className="mt-4 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
               >
-                  <div className="subcribe-form mt-4">
-                                    <Form>
-                                        <div className="mb-2">
-                                            <Input type="email" id="email" name="email" className="rounded-pill" placeholder="E-mail :" />
-                                            <Button type="submit" className="btn btn-pills btn-success">Subscribe</Button>
-                                        </div>
-                                    </Form>
-                                </div>
-                
+                <div className="subcribe-form mt-4">
+                  <Form>
+                    <div className="mb-2">
+                      <Input type="email" id="email" name="email" className="rounded-pill" placeholder="E-mail :" />
+                      <Button type="submit" className="btn btn-pills btn-success">Subscribe</Button>
+                    </div>
+                  </Form>
+                </div>
+
               </Col>
             </Row>
-            <Row>    
-            <Col
+            <Row>
+              <Col
                 lg="6"
                 md="6"
                 xs="12"
                 className="mt-4 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
               >
-               
-               <Link to="#" className="logo-footer">
+
+                <Link to="#" className="logo-footer">
                   <img
                     src={this.props.isLight ? logodark : logolight}
                     height="24"
                     alt=""
                   />
-                </Link> 
+                </Link>
 
-              </Col>     
-                 <Col
+              </Col>
+              <Col
                 lg="3"
                 md="3"
                 xs="12"
@@ -198,7 +198,7 @@ class Footer extends Component {
                   ))}
                 </ul>
               </Col>
-              </Row>
+            </Row>
           </Container>
         </footer>
         <footer className="footer footer-bar">

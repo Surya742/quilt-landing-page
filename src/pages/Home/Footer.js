@@ -11,28 +11,28 @@ import QuiltLogo from '../../assets/images/newUI/quilt-new-logo.svg';
 import '../../assets/css/newUI/title1.css';
 
 
- class Footer extends Component {
+class Footer extends Component {
 
-  
-    constructor(props) {
-        super(props);
-        this.state = {
-          grid1: [
-            { title: "Home", link: "/" },
-            { title: "About", link: "/" },
-            { title: "Roadmap", link: "/" },
-          ],
-          grid2: [
-            { title: "Our Story", link: "/" },
-            { title: "Team", link: "/" },
-            { title: "Blog", link: "/" },
-          ],
-        };
-      }
-    render() {
-        return (
-            <React.Fragment>
-                <footer className={this.props.isLight ? "footer" : "footer"} style={{backgroundColor: "#212121"}}>
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      grid1: [
+        { title: "Home", link: "/" },
+        { title: "About", link: "/" },
+        { title: "Roadmap", link: "/" },
+      ],
+      grid2: [
+        { title: "Our Story", link: "/" },
+        { title: "Team", link: "/" },
+        { title: "Blog", link: "/" },
+      ],
+    };
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <footer className={this.props.isLight ? "footer" : "footer"} style={{ backgroundColor: "#212121" }}>
           <Container>
             <Row>
               <Col
@@ -43,23 +43,23 @@ import '../../assets/css/newUI/title1.css';
               >
                 <Link to="" className="logo-footer">
                   <img src={QuiltLogo} height="38" alt="" />
-                </Link> 
+                </Link>
 
-                <h2 className="foot-head">Join our <span style={{color: "#00E467"}}>community</span></h2>
+                <h2 className="foot-head">Join our <span style={{ color: "#00E467" }}>community</span></h2>
                 <p className="foot-p">Lorem ipsum dolor sit amet. Ut excepturi deserunt qui veritatis quisquam aut quidem adipisci ut inventore.</p>
 
                 <ul className={this.props.isLight ? "list-unstyled social-icon social mb-0 m t-4" : "list-unstyled social-icon foot-social-icon mb-0 mt-4"}>
-                  
+
                   <li className="list-inline-item me-1">
-                    <a href="https://medium.com/@quilt.chat" className="icon-hover rounded" target="_blank" 
-                        style={{backgroundColor: "#00E467"}}>
-                    <FaMediumM className="fea icon-sm fea-social text-dark"/>
+                    <a href="https://medium.com/@quilt.chat" className="icon-hover rounded" target="_blank"
+                      style={{ backgroundColor: "#00E467" }}>
+                      <FaMediumM className="fea icon-sm fea-social text-dark" />
                     </a>
                   </li>
 
                   <li className="list-inline-item me-1">
-                    <a href="https://github.com/quilt-dao" className="icon-hover rounded" target="_blank" 
-                        style={{backgroundColor: "#00E467"}}>
+                    <a href="https://github.com/quilt-dao" className="icon-hover rounded" target="_blank"
+                      style={{ backgroundColor: "#00E467" }}>
                       <FaGithub
                         icon="github"
                         className="fea icon-sm fea-social text-dark"
@@ -68,8 +68,8 @@ import '../../assets/css/newUI/title1.css';
                   </li>
 
                   <li className="list-inline-item me-1">
-                    <a href="https://twitter.com/Quilt_chat" target="_blank" className="icon-hover rounded" 
-                        style={{backgroundColor: "#00E467"}}>
+                    <a href="https://twitter.com/Quilt_chat" target="_blank" className="icon-hover rounded"
+                      style={{ backgroundColor: "#00E467" }}>
                       <FaTwitter
                         icon="twitter"
                         className="fea icon-sm fea-social text-dark"
@@ -78,8 +78,8 @@ import '../../assets/css/newUI/title1.css';
                   </li>
 
                   <li className="list-inline-item me-1">
-                    <a href="https://discord.gg/u3RjUUwm5J" target="_blank" className="icon-hover   rounded" 
-                        style={{backgroundColor: "#00E467"}}>
+                    <a href="https://discord.gg/u3RjUUwm5J" target="_blank" className="icon-hover   rounded"
+                      style={{ backgroundColor: "#00E467" }}>
                       <FaDiscord
                         icon="discord"
                         className="fea icon-sm fea-social text-dark"
@@ -88,12 +88,12 @@ import '../../assets/css/newUI/title1.css';
                   </li>
 
                 </ul>
-                <p style={{color: "#00E467", fontSize: "15px", marginTop: "5%"}}>Copyright © 2022 Quilt.chat</p>
+                <p style={{ color: "#00E467", fontSize: "15px", marginTop: "5%" }}>Copyright © 2022 Quilt.chat</p>
               </Col>
-              
+
             </Row>
-            <Row className="foot-list">    
-                 <Col
+            <Row className="foot-list">
+              <Col
                 lg="3"
                 md="3"
                 xs="6"
@@ -138,7 +138,7 @@ import '../../assets/css/newUI/title1.css';
                   ))}
                 </ul>
               </Col>
-              </Row>
+            </Row>
 
           </Container>
         </footer>
@@ -156,8 +156,8 @@ import '../../assets/css/newUI/title1.css';
             </Row>
           </Container>
         </footer> */}
-            </React.Fragment>
-        );
-    }
+      </React.Fragment>
+    );
+  }
 }
 export default Footer;

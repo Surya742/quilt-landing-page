@@ -68,27 +68,29 @@ class IndexRoot extends Component {
     return (
       <React.Fragment>
         <Suspense fallback={this.Loader()}>
-          <Topbar />
-          <section style={{ backgroundColor: "white" }}>
-            <Section />
-            <Main />
+          <div className='min-w-full overflow-hidden'>
+            <Topbar />
+            <section style={{ backgroundColor: "white" }}>
+              <Section />
+              <Main />
 
-          </section>
-          <section style={{ backgroundColor: "#212121", padding: "5%" }}>
-            <Carosel />
-          </section>
-          <section style={{ backgroundColor: "white", padding: "5%" }}>
-            <Carosel2 />
-          </section>
-          <section className="section" style={{ backgroundColor: "#212121", padding: "5%", height: "800px" }}>
-            <GettingStarted />
-          </section>
-          <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", height: "800px" }}>
-            <OurJourney />
-          </section>
-          <section style={{ backgroundColor: "#212121" }}>
-            <Footer />
-          </section>
+            </section>
+            <section style={{ backgroundColor: "#212121", padding: "5%" }}>
+              <Carosel />
+            </section>
+            <section style={{ backgroundColor: "white", padding: "5%" }}>
+              <Carosel2 />
+            </section>
+            <section className="section" style={{ backgroundColor: "#212121", padding: "5%", height: "800px" }}>
+              <GettingStarted />
+            </section>
+            <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", height: "800px" }}>
+              <OurJourney />
+            </section>
+            <section style={{ backgroundColor: "#212121" }}>
+              <Footer />
+            </section>
+          </div>
 
         </Suspense>
       </React.Fragment>
