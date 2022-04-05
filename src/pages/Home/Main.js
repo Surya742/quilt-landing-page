@@ -18,32 +18,31 @@ import '../../assets/css/newUI/title1.css';
 export default class Main extends Component {
   render() {
     return (
-      <React.Fragment style={{backgroundColor: "white"}}>
-        <Container className="mt-100 mt-60">
-          <Row className="align-items-center">
-            <Col lg={6} md={6}>
-              <img src={TiltLaptop} className="main-ill lappy" alt="" />
-              <img src={HollowCube} className="lappy-cube" alt="" />
-            </Col>
+      <React.Fragment style={{ backgroundColor: "white" }}>
+        <div className="mt-100 mt-60 md:h-screen grid grid-cols-1 w-screen justify-items-end items-center lg:grid-cols-2 px-4 py-8 relative overflow-hidden m-0">
+          <img src={BlackStrip} className="black-strip main-strip" alt="" />
+          <img src={GreenStrip} className="green-strip main-strip" alt="" />
+          <div className='justify-self-end relative'>
+            <img src={TiltLaptop} className="lg:h-[711px] -rotate-6" alt="" />
+            <img src={HollowCube} className="lappy-cube" alt="" />
 
-            <Col lg={6} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <img src={BlackStrip} className="black-strip" alt="" />
-              <img src={GreenStrip} className="green-strip" alt="" />
-              <div className="section-title">
-                <h1 className="first-title">An encrypted</h1>
-                <h1 className="first-title-2">social protocol</h1>
-                <p className="text-dark first-title-3">We provide a human element to the blockchain by allowing users to socialise and transact, securely and anonymously across the crypto space.</p>
-                
-                <a
-                  href="https://medium.com/@quilt.chat"
-                  className="mt-3 h6 btn btn-default btn-pills btn-11"
-                >
-                  Launch App
-                </a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+          </div>
+
+          <div className="section-title text-left justify-self-start">
+            <h1 className="main-heading">An encrypted<div className='main-highlighted-text'>social protocol</div></h1>
+            <h1 className="first-title-2"></h1>
+            <p className="font-medium text-[25px] lg:w-[40ch] main-paragraph text-center lg:text-left mt-16 lg:mt-12">We provide a human element to the blockchain by allowing users to socialise and transact, securely and anonymously across the crypto space.</p>
+
+            <div className='flex justify-center lg:block'>
+              <a
+                href="https://medium.com/@quilt.chat"
+                className="mt-3 h6 btn btn-default btn-pills btn-11 p-8 main-cta"
+              >
+                Launch App
+              </a>
+            </div>
+          </div>
+        </div>
 
         {/* <Container className="mt-100 mb-100">
           <Row className="">

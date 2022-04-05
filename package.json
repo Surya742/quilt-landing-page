@@ -38,7 +38,6 @@
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
-    "react-scroll-up-button": "^1.6.4",
     "react-slick": "^0.28.1",
     "react-star-ratings": "^2.3.0",
     "react-text-rotator": "^1.1.0",
@@ -80,8 +79,11 @@
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/runtime-corejs3": "^7.17.2",
+    "autoprefixer": "^10.4.4",
     "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.12",
     "sass": "^1.49.9",
+    "tailwindcss": "^3.0.23",
     "webpack": "^5.70.0"
   }
 }

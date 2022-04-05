@@ -120,12 +120,12 @@ class Topbar extends Component {
       //Match level 2 id
       tmpLink.id === level2_id
         ? tmpLink.child.map((tmpchild) =>
-            //if level1 id is matched then match level 3 id
-            tmpchild.id === level3_id
-              ? //if id is matched then update status(level 3 sub menu will be open)
-                (tmpchild.isOpenNestedSubMenu = !tmpchild.isOpenNestedSubMenu)
-              : (tmpchild.isOpenNestedSubMenu = false),
-          )
+          //if level1 id is matched then match level 3 id
+          tmpchild.id === level3_id
+            ? //if id is matched then update status(level 3 sub menu will be open)
+            (tmpchild.isOpenNestedSubMenu = !tmpchild.isOpenNestedSubMenu)
+            : (tmpchild.isOpenNestedSubMenu = false),
+        )
         : false,
     );
     this.setState({ navLinks: tmpLinks });

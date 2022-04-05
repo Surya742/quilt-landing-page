@@ -30,57 +30,30 @@ class Topbar extends Component {
     });
     return (
       <React.Fragment>
-        <header id="topnav" className="defaultscroll sticky">
-          <Container>
+        <header id="" className="defaultscroll sticky bg-[#212121] top-0 z-[999] shadow-md">
+          <Container className="py-4 flex items-center justify-between">
             <Link className="logo" to="/">
-              <img src={QuiltLogo} height="38" alt="" />
+              <img src={QuiltLogo} className='h-8 lg:h-12' alt="" />
             </Link>
-            <div className="buy-button">
+
+            <div className="flex items-center gap-8">
+              <ul className="flex gap-x-4 items-center p-0 m-0">
+                {this.state.navItems.map((item, key) => (
+                  <li key={key} className="">
+                    <a href={item.href} className='text-white'> {item.navheading}</a>
+                  </li>
+                ))}
+              </ul>
+
               <a
                 href="https://app.quilt.chat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-success btn-pills"
+                className="bg-[#00E467] text-black rounded-[20px] font-bold hover:bg-[#05bb57ea] duration-200 transition-colors text-sm p-2"
               >
                 Launch App
               </a>
             </div>
-            <div className="menu-extras">
-              <div className="menu-item">
-                <Link
-                  to="#"
-                  onClick={this.toggleLine}
-                  className={
-                    this.state.isOpen ? "navbar-toggle open" : "navbar-toggle"
-                  }
-                >
-                  <div className="lines">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <ScrollspyNav
-              scrollTargetIds={targetId}
-              scrollDuration="800"
-              headerBackground="false"
-              activeNavClass="active"
-            >
-              <div
-                id="navigation"
-                style={{ display: this.state.isOpen ? "block" : "none", color: "white" }}
-              >
-                <ul className="navigation-menu nav-items">
-                  {this.state.navItems.map((item, key) => (
-                    <li key={key} className="has-submenu">
-                      <a href={item.href}> {item.navheading}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </ScrollspyNav>
           </Container>
         </header>
       </React.Fragment>
@@ -89,3 +62,26 @@ class Topbar extends Component {
 }
 
 export default Topbar;
+
+// <div className="buy-button">
+//   <a
+//     href="https://app.quilt.chat"
+//     target="_blank"
+//     rel="noopener noreferrer"
+//     className="btn btn-success btn-pills"
+//   >
+//     Launch App
+//   </a>
+// </div>
+
+{/* <ul className="navigation-menu nav-items">
+{this.state.navItems.map((item, key) => (
+  <li key={key} className="has-submenu">
+    <a href={item.href}> {item.navheading}</a>
+  </li>
+))}
+</ul> */}
+
+{/* <Link className="logo" to="/">
+<img src={QuiltLogo} height="38" alt="" />
+</Link> */}
