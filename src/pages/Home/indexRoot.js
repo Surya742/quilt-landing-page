@@ -32,25 +32,6 @@ class IndexRoot extends Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    document.body.classList = '';
-    window.addEventListener('scroll', this.scrollNavigation, true);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.scrollNavigation, true);
-  }
-
-  scrollNavigation = () => {
-    var doc = document.documentElement;
-    var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-    if (top > 80) {
-      document.getElementById('topnav').classList.add('nav-sticky');
-    } else {
-      document.getElementById('topnav').classList.remove('nav-sticky');
-    }
-  };
-
   Loader = () => {
     return (
       <div id="preloader">
@@ -68,7 +49,7 @@ class IndexRoot extends Component {
     return (
       <React.Fragment>
         <Suspense fallback={this.Loader()}>
-          <div className='min-w-full'>
+          <div className='min-w-full bg-white'>
             <Topbar />
             <section style={{
               backgroundColor: "white",
@@ -78,7 +59,7 @@ class IndexRoot extends Component {
               <Main />
 
             </section>
-            <section style={{ backgroundColor: "#212121", padding: "5%", overflow: 'hidden' }}>
+            <section style={{ backgroundColor: "white", overflow: 'hidden' }}>
               <Carosel />
             </section>
             <section style={{ backgroundColor: "white", padding: "5%", overflow: 'hidden' }}>
