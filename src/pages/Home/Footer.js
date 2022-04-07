@@ -76,7 +76,6 @@ class Footer extends Component {
                 </div>
                 <p style={{ color: "#00E467", fontSize: "15px", marginTop: "5%" }}>Copyright © 2022 Quilt.chat</p>
               </div>
-
               <div>
                 <ul className="list-unstyled footer-list mt-4">
                   {this.state.grid1.map((grid, key) => (
