@@ -19,7 +19,7 @@ export default class Main extends Component {
   render() {
     return (
       <React.Fragment style={{ backgroundColor: "white" }}>
-        <div className="mt-100 mt-60 md:h-screen grid grid-cols-1 w-screen justify-items-end items-center lg:grid-cols-2 px-4 py-8 relative overflow-hidden m-0">
+        <div className="mt-100 mt-60 md:h-screen grid grid-cols-1 w-screen justify-items-end items-center lg:grid-cols-2 px-4 py-8 relative overflow-hidden m-0" id="main">
           <img src={BlackStrip} className="black-strip main-strip" alt="" />
           <img src={GreenStrip} className="green-strip main-strip" alt="" />
           <div className='justify-self-end relative'>
@@ -35,7 +35,8 @@ export default class Main extends Component {
 
             <div className='flex justify-center lg:block'>
               <a
-                href="https://medium.com/@quilt.chat"
+                href="https://app.quilt.chat/"
+                target="_blank"
                 className="mt-3 h6 btn btn-default btn-pills btn-11 p-8 main-cta"
               >
                 Launch App

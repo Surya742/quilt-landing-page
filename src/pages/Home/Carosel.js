@@ -8,6 +8,10 @@ import GreenStrip from '../../assets/images/newUI/green-strip.svg';
 import Cube1 from '../../assets/images/newUI/small-1-cube.svg';
 import sliderFolder from '../../assets/images/newUI/slider-1-folder.svg';
 import HollowCube from '../../assets/images/newUI/hollowCube.svg';
+import chain from '../../assets/images/newUI/chain.png';
+import safe from '../../assets/images/newUI/safe.png';
+import nft from '../../assets/images/newUI/nft.png';
+import community from '../../assets/images/newUI/community.png';
 import '../../assets/css/newUI/title1.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -73,16 +77,16 @@ const Carosel = () => {
             <img src={sliderFolder} className='z-[10]' />
           )}
           {activeSlide === 2 && (
-            <img src={sliderFolder} className='z-[10]' />
+            <img src={chain} className='z-[10]' />
           )}
           {activeSlide === 3 && (
-            <img src={sliderFolder} className='z-[10]' />
+            <img src={safe} className='z-[10]' />
           )}
           {activeSlide === 4 && (
-            <img src={sliderFolder} className='z-[10]' />
+            <img src={nft} className='z-[10]' />
           )}
           {activeSlide === 5 && (
-            <img src={sliderFolder} className='z-[10]' />
+            <img src={community} className='z-[10]' />
           )}
         </div>
         <div className='mt-12 flex space-x-4'>

@@ -291,6 +291,18 @@ div .carousel-text {
   transform: rotate(165deg);
 }
 
+.journey-more-btn {
+  border-color: black !important;
+  font-size: 18px !important;
+}
+
+.our-journey-heading {
+  font-size: 100px !important;
+  line-height: 105px;
+  color: black;
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .green-left-strip {
     left: -100px;

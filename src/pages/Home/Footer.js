@@ -32,97 +32,52 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <footer className={this.props.isLight ? "footer" : "footer"} style={{ backgroundColor: "#212121" }}>
+        <footer className="rounded-tr-[5rem] footer" style={{ backgroundColor: "#212121" }}>
           <Container>
-            <Row>
-              <Col
-                lg="6"
-                xs="12"
-                className="mb-0 mb-md-4 pb-0 pb-md-2"
-                name="footercolumn"
-              >
-                <Link to="" className="logo-footer">
-                  <img src={QuiltLogo} height="38" alt="" />
-                </Link>
-
+            <Link to="/" className="logo-footer">
+              <img src={QuiltLogo} height="38" alt="" />
+            </Link>
+            <div className='grid grid-cols-1 lg:grid-cols-3 w-full'>
+              <div>
                 <h2 className="foot-head">Join our <span style={{ color: "#00E467" }}>community</span></h2>
-                <p className="foot-p">Lorem ipsum dolor sit amet. Ut excepturi deserunt qui veritatis quisquam aut quidem adipisci ut inventore.</p>
+                <p className="foot-p">We are new team introducing world new level of messaging and encryption. Be believe Web 3.0 is much more secure then you think.</p>
+                <div className='flex gap-2'>
 
-                <ul className={this.props.isLight ? "list-unstyled social-icon social mb-0 m t-4" : "list-unstyled social-icon foot-social-icon mb-0 mt-4"}>
 
-                  <li className="list-inline-item me-1">
-                    <a href="https://medium.com/@quilt.chat" className="icon-hover rounded" target="_blank"
-                      style={{ backgroundColor: "#00E467" }}>
-                      <FaMediumM className="fea icon-sm fea-social text-dark" />
-                    </a>
-                  </li>
-
-                  <li className="list-inline-item me-1">
-                    <a href="https://github.com/quilt-dao" className="icon-hover rounded" target="_blank"
-                      style={{ backgroundColor: "#00E467" }}>
-                      <FaGithub
-                        icon="github"
-                        className="fea icon-sm fea-social text-dark"
-                      />
-                    </a>
-                  </li>
-
-                  <li className="list-inline-item me-1">
-                    <a href="https://twitter.com/Quilt_chat" target="_blank" className="icon-hover rounded"
-                      style={{ backgroundColor: "#00E467" }}>
-                      <FaTwitter
-                        icon="twitter"
-                        className="fea icon-sm fea-social text-dark"
-                      />
-                    </a>
-                  </li>
-
-                  <li className="list-inline-item me-1">
-                    <a href="https://discord.gg/u3RjUUwm5J" target="_blank" className="icon-hover   rounded"
-                      style={{ backgroundColor: "#00E467" }}>
+                  <div className='flex justify-center items-center bg-green-500 p-2 rounded-md'>
+                    <a href='' target="_blank">
                       <FaDiscord
                         icon="discord"
-                        className="fea icon-sm fea-social text-dark"
+                        className="fea fea-social text-black"
+                        size={25}
                       />
                     </a>
-                  </li>
+                  </div>
 
-                </ul>
+                  <div className='flex justify-center items-center bg-green-500 p-2 rounded-md'>
+                    <a href='' target="_blank">
+                      <FaTwitter
+                        icon="twitter"
+                        className="fea fea-social text-black"
+                        size={25}
+                      />
+                    </a>
+                  </div>
+
+                  <div className='flex justify-center items-center bg-green-500 p-2 rounded-md'>
+                    <a href='https://medium.com/@quilt.chat/about-us-a1ec33dc5cdf' target="_blank">
+                      <FaMediumM
+                        icon="medium"
+                        className="fea fea-social text-black"
+                        size={25}
+                      />
+                    </a>
+                  </div>
+                </div>
                 <p style={{ color: "#00E467", fontSize: "15px", marginTop: "5%" }}>Copyright © 2022 Quilt.chat</p>
-              </Col>
+              </div>
 
-            </Row>
-            <Row className="foot-list">
-              <Col
-                lg="3"
-                md="3"
-                xs="6"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                <ul className="list-unstyled footer-list mt-4">
-                  {this.state.grid1.map((grid, key) => (
-                    <li key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? "text-light" : "text-foot"
-                        }
-                      >
-                        {grid.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </Col>
-
-              <Col
-                lg="3"
-                md="3"
-                xs="6"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
+              <div>
                 <ul className="list-unstyled footer-list mt-4">
                   {this.state.grid2.map((grid, key) => (
                     <li key={key}>
@@ -137,8 +92,25 @@ class Footer extends Component {
                     </li>
                   ))}
                 </ul>
-              </Col>
-            </Row>
+              </div>
+
+              <div>
+                <ul className="list-unstyled footer-list mt-4">
+                  {this.state.grid1.map((grid, key) => (
+                    <li key={key}>
+                      <Link
+                        to={grid.link}
+                        className={
+                          this.props.isLight ? "text-light" : "text-foot"
+                        }
+                      >
+                        {grid.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
           </Container>
         </footer>
