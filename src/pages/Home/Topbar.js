@@ -11,8 +11,8 @@ class Topbar extends Component {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home", href: "https://medium.com/@quilt.chat" },
-        { id: 2, idnm: "blog", navheading: "Blog", href: "https://band-reaper-0df.notion.site/85457568a6d64d8889c4a3124428ceab?v=2da7f583124c44c0aa02ac11e715553e" },
+        { id: 1, idnm: "home", navheading: "Home", href: "#", target: '' },
+        { id: 2, idnm: "blog", navheading: "Blog", href: "https://medium.com/@quilt.chat", target: '_blank' },
         // { id: 3, idnm: "team", navheading: "Team", href: "https://twitter.com/Quilt_chat" },
       ],
       isOpen: false,
@@ -40,7 +40,7 @@ class Topbar extends Component {
               <ul className="flex gap-x-4 items-center p-0 m-0">
                 {this.state.navItems.map((item, key) => (
                   <li key={key} className="">
-                    <a href={item.href} className='text-white'> {item.navheading}</a>
+                    <a href={item.href} className='text-white' target={item.target}> {item.navheading}</a>
                   </li>
                 ))}
               </ul>

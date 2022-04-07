@@ -26,8 +26,8 @@ const Carosel2 = () => {
         <img src={GreenStrip} className="green-second-left-strip main-strip hidden lg:block" alt="" />
         <img src={GreenStrip} className="green-left-strip main-strip hidden lg:block" alt="" /> */}
       <div className='carousel-wrapper text-black grid grid-cols-1 xl:grid-cols-2 justify-items-start w-screen items-center 2xl:px-48 xl:px-12 md:px-24 text-center lg:text-left px-8 lg:py-0 py-32 relative' style={{ backgroundColor: 'white' }}>
-        <img src={BlackStrip} className="-bottom-52 right-0 main-strip" alt="" />
-        <img src={GreenStrip} className="-bottom-60 -right-14 main-strip" alt="" />
+        <img src={BlackStrip} className="-bottom-52 right-0 main-strip hidden md:block" alt="" />
+        <img src={GreenStrip} className="-bottom-60 -right-14 main-strip hidden md:block" alt="" />
         <div className='rounded-[49px] 2xl:h-[550px] 2xl:w-[500px] lg:h-[450px] lg:w-[400px] h-full w-full flex justify-center items-center 2xl:ml-48 lg:justify-self-center xl:justify-self-end sm:w-[300px] sm:justify-self-center flex-col relative'>
           {/* Bullets for scrolling */}
           <div className='bg-white h-full w-full flex justify-center items-center rounded-[49px]'>
@@ -62,6 +62,7 @@ const Carosel2 = () => {
                 <div className='2xl:flex 2xl:justify-start md:justify-center items-center'>
                   <a
                     href="https://app.quilt.chat/"
+                    target="_blank"
                     className="mt-1 h6 btn btn-default btn-pills btn-11 p-8 border-2 w-48"
                   >
                     Try it now
