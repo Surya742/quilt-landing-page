@@ -32,7 +32,7 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <footer className={this.props.isLight ? "footer" : "footer"} style={{ backgroundColor: "#212121" }}>
+        <footer className="rounded-tr-[5rem] footer" style={{ backgroundColor: "#212121" }}>
           <Container>
             <Link to="/" className="logo-footer">
               <img src={QuiltLogo} height="38" alt="" />
@@ -40,7 +40,7 @@ class Footer extends Component {
             <div className='grid grid-cols-1 lg:grid-cols-3 w-full'>
               <div>
                 <h2 className="foot-head">Join our <span style={{ color: "#00E467" }}>community</span></h2>
-                <p className="foot-p">Lorem ipsum dolor sit amet. Ut excepturi deserunt qui veritatis quisquam aut quidem adipisci ut inventore.</p>
+                <p className="foot-p">We are new team introducing world new level of messaging and encryption. Be believe Web 3.0 is much more secure then you think.</p>
                 <div className='flex gap-2'>
 
 

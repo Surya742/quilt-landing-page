@@ -15,19 +15,17 @@ import SectionTitle from "../../components/Shared/SectionTitle";
 export default class GettingStarted extends Component {
     render() {
         return (
-            <React.Fragment>
-                <Row className="d-flex justify-content-around p-5">
-                    <img src={GreenBox} alt="" className="greenBox" />
-                    <div className="greenDesc">
-                        <h1>Chandan<span style={{ display: 'block', marginTop: "-1%", color: '#00E467' }}> Das</span></h1>
-                        <p className='fw-lighter fs-6'>Blockchain Developer</p>
-                    </div>
-                    <img src={bwFace} alt="" className="bwFace" />
-                    <img src={bwFace2} alt="" className="bwFace2" />
-                    <img src={bwFace3} alt="" className="bwFace3" />
-                    <img src={bwFace4} alt="" className="bwFace4" />
-                </Row>
-            </React.Fragment>
+            <div className='flex justify-around rounded-bl-[10rem] w-full min-h-screen' style={{ backgroundColor: '#212121' }}>
+                <img src={GreenBox} alt="" className="greenBox" />
+                <div className="greenDesc">
+                    <h1>Chandan<span style={{ display: 'block', marginTop: "-1%", color: '#00E467' }}> Das</span></h1>
+                    <p className='fw-lighter fs-6'>Blockchain Developer</p>
+                </div>
+                <img src={bwFace} alt="" className="h-42" />
+                <img src={bwFace2} alt="" className="h-42" />
+                <img src={bwFace3} alt="" className="h-42" />
+                <img src={bwFace4} alt="" className="h-42" />
+            </div>
         )
     }
-}
+} 

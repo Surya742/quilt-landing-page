@@ -57,5 +57,4 @@ export default class Section extends Component {
             </React.Fragment>
         )
     }
-}//Messaging made
-// Secure on the Blockchain style={{backgraoundImages:"url( 
+}

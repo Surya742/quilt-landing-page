@@ -86,7 +86,7 @@ const Carosel2 = () => {
 
           {activeSlide === 3 && (
             <div className='flex flex-col mt-12'>
-              <h3 className='carousel-heading'>Add an<br /><span className='text-[#00E467]'>extra layer</span> <br />of encryption by generating your private keys</h3>
+              <h3 className='carousel-heading'><span className='text-[#00E467]'>Extra layer</span> <br />of encryption</h3>
               <div className='2xl:flex 2xl:justify-start md:justify-center items-center mt-8'>
                 <a
                   href="https://app.quilt.chat/"
@@ -100,7 +100,7 @@ const Carosel2 = () => {
 
           {activeSlide === 4 && (
             <div className='mt-8 flex flex-col'>
-              <h3 className='carousel-heading' style={{ lineHeight: 1.12 }}>Enjoy a  <br /><span className='text-[#00E467]'>private and secure</span> <br />messaging with your friends.</h3>
+              <h3 className='carousel-heading' style={{ lineHeight: 1.12 }}><span className='text-[#00E467]'>Private and Secure</span> <br />messaging.</h3>
               <div className='2xl:flex 2xl:justify-start md:justify-center items-center mt-2'>
                 <a
                   href="https://app.quilt.chat/"

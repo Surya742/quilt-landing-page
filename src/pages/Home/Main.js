@@ -35,7 +35,8 @@ export default class Main extends Component {
 
             <div className='flex justify-center lg:block'>
               <a
-                href="https://medium.com/@quilt.chat"
+                href="https://app.quilt.chat/"
+                target="_blank"
                 className="mt-3 h6 btn btn-default btn-pills btn-11 p-8 main-cta"
               >
                 Launch App
