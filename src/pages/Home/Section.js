@@ -9,8 +9,8 @@ export default class Section extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="bg-home d-flex align-items-center rounded-bl-[5rem] lg:rounded-bl-[15rem]" style={{ backgroundColor: '#212121' }}>
-                    <Container>
+                <section className="bg-home d-flex align-items-center rounded-bl-[5rem] lg:rounded-bl-[15rem]" style={{ backgroundColor: '#212121' }} id="home">
+                    <Container className='mt-[100px]'>
                         <div className="title-heading text-left mt-5 pt-4 relative z-20">
                             <img src={MsgFrame} className="h-[350px] absolute -top-[7rem] left-8 blur-[2px] md:h-[475px] lg:h-[738px] lg:left-0 2xl:-left-40 lg:-top-[15rem]" alt="" />
                             <h4 className="text-white font-bold relative left-20 z-20 bottom-20 hero-heading md:bottom-[3rem] md:left-18 2xl:-left-20 lg:bottom-[8rem]">Making <br /> Blockchain <br /> Social</h4>
