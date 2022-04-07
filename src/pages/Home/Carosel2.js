@@ -20,6 +20,18 @@ const Carosel2 = () => {
     return () => clearInterval(interval);
   }, [activeSlide]);
 
+  const handleKeyDown = (e) => {
+    if (e.code === "ArrowRight") {
+      setActiveSlide(activeSlide === 5 ? 1 : activeSlide + 1)
+    }
+
+    if (e.code === "ArrowLeft") {
+      setActiveSlide(activeSlide === 1 ? 5 : activeSlide - 1)
+    }
+  }
+
+  document.addEventListener("keydown", handleKeyDown, false);
+
   return (
     <React.Fragment>
       {/* <img src={Cube1} className="absolute -top-8 h-[270px] right-0 hidden lg:block" alt="" />

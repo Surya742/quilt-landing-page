@@ -26,8 +26,20 @@ const Carosel = () => {
     return () => clearInterval(interval);
   }, [activeSlide]);
 
+  const handleKeyDown = (e) => {
+    if (e.code === "ArrowRight") {
+      setActiveSlide(activeSlide === 5 ? 1 : activeSlide + 1)
+    }
+
+    if (e.code === "ArrowLeft") {
+      setActiveSlide(activeSlide === 1 ? 5 : activeSlide - 1)
+    }
+  }
+
+  document.addEventListener("keydown", handleKeyDown, false);
+
   return (
-    <div className='carousel-wrapper text-white grid grid-cols-1 xl:grid-cols-2 justify-items-start w-screen items-center 2xl:px-48 xl:px-12 md:px-24 text-center lg:text-left px-8 lg:py-0 py-32 relative' style={{ backgroundColor: '#212121' }} id="features">
+    <div className='carousel-wrapper text-white grid grid-cols-1 xl:grid-cols-2 justify-items-start w-screen items-center 2xl:px-48 xl:px-12 md:px-24 text-center lg:text-left px-8 lg:py-0 py-32 relative' style={{ backgroundColor: '#212121' }} id="features" >
       <img src={Cube1} className="absolute -top-8 h-[270px] right-0 hidden lg:block" alt="" />
       <img src={GreenStrip} className="green-second-left-strip main-strip hidden lg:block" alt="" />
       <img src={GreenStrip} className="green-left-strip main-strip hidden lg:block" alt="" />

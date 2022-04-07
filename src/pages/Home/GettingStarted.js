@@ -41,7 +41,7 @@ export default class GettingStarted extends Component {
                         <p className='mt-4'>Project Manager</p>
                     </div>
                     <div className='w-82'>
-                        <p className='font-bold getting-started-person-name'>Melo<br /> <span className='text-[#00E467]'>Lastname</span></p>
+                        <p className='font-bold getting-started-person-name'>Melo<br /> <span className='text-[#00E467]'></span></p>
                         <p className='mt-4'>Writer</p>
                     </div>
                     <div className='w-82'>

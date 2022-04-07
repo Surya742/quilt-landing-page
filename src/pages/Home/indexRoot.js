@@ -13,6 +13,7 @@ import bg from '../../assets/images/bg.svg';
 import FeatherIcon from 'feather-icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core';
+import AIEmoji from './AIEmoji';
 
 // Import sub components
 const Topbar = React.lazy(() => import('./Topbar'));
@@ -47,9 +48,10 @@ class IndexRoot extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment >
+        <AIEmoji />
         <Suspense fallback={this.Loader()}>
-          <div className='min-w-full bg-white'>
+          <div className='min-w-full bg-white' >
             <Topbar />
             <section style={{
               backgroundColor: "white",
@@ -75,7 +77,6 @@ class IndexRoot extends Component {
               <Footer />
             </section>
           </div>
-
         </Suspense>
       </React.Fragment>
     );
