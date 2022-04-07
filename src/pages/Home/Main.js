@@ -44,64 +44,7 @@ export default class Main extends Component {
           </div>
         </div>
 
-        {/* <Container className="mt-100 mb-100">
-          <Row className="">
 
-            <Carousel className="carousel-body">
-              <Carousel.Item>
-                <img
-                  className="silder-rec"
-                  src={sliderRec}
-                  alt="First slide"
-                />
-                <img
-                  className="slider-folder"
-                  src={sliderFolder}
-                  alt="First slide"
-                />
-                <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-
-              <Carousel.Item>
-                <img
-                  className="silder-rec"
-                  src={sliderRec}
-                  alt="Second slide"
-                />
-                <img
-                  className="slider-folder"
-                  src={sliderFolder}
-                  alt="First slide"
-                />
-                <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-
-              <Carousel.Item>
-                <img
-                  className="silder-rec"
-                  src={sliderRec}
-                  alt="Third slide"
-                />
-                <img
-                  className="slider-folder"
-                  src={sliderFolder}
-                  alt="First slide"
-                />
-                <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-            
-          </Row>
-        </Container> */}
       </React.Fragment>
     );
   }

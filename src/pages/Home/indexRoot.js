@@ -32,25 +32,6 @@ class IndexRoot extends Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    document.body.classList = '';
-    window.addEventListener('scroll', this.scrollNavigation, true);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.scrollNavigation, true);
-  }
-
-  scrollNavigation = () => {
-    var doc = document.documentElement;
-    var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-    if (top > 80) {
-      document.getElementById('topnav').classList.add('nav-sticky');
-    } else {
-      document.getElementById('topnav').classList.remove('nav-sticky');
-    }
-  };
-
   Loader = () => {
     return (
       <div id="preloader">
@@ -68,26 +49,29 @@ class IndexRoot extends Component {
     return (
       <React.Fragment>
         <Suspense fallback={this.Loader()}>
-          <div className='min-w-full overflow-hidden'>
+          <div className='min-w-full bg-white'>
             <Topbar />
-            <section style={{ backgroundColor: "white" }}>
+            <section style={{
+              backgroundColor: "white",
+              overflow: 'hidden'
+            }}>
               <Section />
               <Main />
 
             </section>
-            <section style={{ backgroundColor: "#212121", padding: "5%" }}>
+            <section style={{ backgroundColor: "white", overflow: 'hidden' }}>
               <Carosel />
             </section>
-            <section style={{ backgroundColor: "white", padding: "5%" }}>
+            <section style={{ backgroundColor: "white", padding: "5%", overflow: 'hidden' }}>
               <Carosel2 />
             </section>
-            <section className="section" style={{ backgroundColor: "#212121", padding: "5%", height: "800px" }}>
+            <section className="section" style={{ backgroundColor: "#212121", padding: "5%", height: "800px", overflow: 'hidden' }}>
               <GettingStarted />
             </section>
-            <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", height: "800px" }}>
+            <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", height: "800px", overflow: 'hidden' }}>
               <OurJourney />
             </section>
-            <section style={{ backgroundColor: "#212121" }}>
+            <section style={{ backgroundColor: "#212121", overflow: 'hidden' }}>
               <Footer />
             </section>
           </div>

@@ -36,6 +36,7 @@
     "react-modal-video": "^1.2.8",
     "react-parallax": "^3.3.0",
     "react-player": "^2.9.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
     "react-slick": "^0.28.1",
