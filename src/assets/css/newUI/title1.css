@@ -303,6 +303,17 @@ div .carousel-text {
   position: relative;
 }
 
+.getting-started-wrapper {
+  min-height: calc(100vh - 90px);
+  font-size: 20px !important;
+}
+
+div .getting-started-person-name {
+  font-size: 80px;
+  line-height: 0.9 !important;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .green-left-strip {
     left: -100px;
@@ -323,6 +334,19 @@ div .carousel-text {
   filter: grayscale(100%);
 }
 
+.getting-started-grid {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 2100px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 100px;
+}
+
+div .getting-started-person-name-more-height {
+  line-height: 1.1 !important;
+}
+
 @media screen and (min-width: 768px) {
   div .carousel-wrapper {
     min-height: 95vh;
@@ -334,6 +358,10 @@ div .carousel-text {
     font-size: 70px !important;
     line-height: 85px;
     text-align: left;
+  }
+
+  .getting-started-grid {
+    grid-template-columns: auto auto;
   }
 
   div .carousel-heading {
@@ -359,6 +387,10 @@ div .carousel-text {
 @media screen and (min-width: 1500px) {
   div .carousel-heading {
     text-align: left;
+  }
+
+  .getting-started-grid {
+    grid-template-columns: auto auto auto;
   }
 
   div .carousel-text {

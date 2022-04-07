@@ -27,7 +27,7 @@ const Carosel = () => {
   }, [activeSlide]);
 
   return (
-    <div className='carousel-wrapper text-white grid grid-cols-1 xl:grid-cols-2 justify-items-start w-screen items-center 2xl:px-48 xl:px-12 md:px-24 text-center lg:text-left px-8 lg:py-0 py-32 relative' style={{ backgroundColor: '#212121' }}>
+    <div className='carousel-wrapper text-white grid grid-cols-1 xl:grid-cols-2 justify-items-start w-screen items-center 2xl:px-48 xl:px-12 md:px-24 text-center lg:text-left px-8 lg:py-0 py-32 relative' style={{ backgroundColor: '#212121' }} id="features">
       <img src={Cube1} className="absolute -top-8 h-[270px] right-0 hidden lg:block" alt="" />
       <img src={GreenStrip} className="green-second-left-strip main-strip hidden lg:block" alt="" />
       <img src={GreenStrip} className="green-left-strip main-strip hidden lg:block" alt="" />

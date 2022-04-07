@@ -18,14 +18,14 @@ class Footer extends Component {
     super(props);
     this.state = {
       grid1: [
-        { title: "Home", link: "/" },
-        { title: "About", link: "/" },
-        { title: "Roadmap", link: "/" },
+        { title: "Home", link: "#home" },
+        { title: "About", link: "#main" },
+        { title: "Roadmap", link: "#journey" },
       ],
       grid2: [
-        { title: "Our Story", link: "/" },
-        { title: "Team", link: "/" },
-        { title: "Blog", link: "/" },
+        { title: "Features", link: "#features" },
+        { title: "Team", link: "#team" },
+        { title: "Blog", link: "https://medium.com/@quilt.chat", target: "_blank" },
       ],
     };
   }
@@ -79,16 +79,11 @@ class Footer extends Component {
 
               <div>
                 <ul className="list-unstyled footer-list mt-4">
-                  {this.state.grid2.map((grid, key) => (
+                  {this.state.grid1.map((grid, key) => (
                     <li key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? "text-light" : "text-foot"
-                        }
-                      >
+                      <a href={grid.link} target={grid.target} className='text-light'>
                         {grid.title}
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -96,16 +91,11 @@ class Footer extends Component {
 
               <div>
                 <ul className="list-unstyled footer-list mt-4">
-                  {this.state.grid1.map((grid, key) => (
+                  {this.state.grid2.map((grid, key) => (
                     <li key={key}>
-                      <Link
-                        to={grid.link}
-                        className={
-                          this.props.isLight ? "text-light" : "text-foot"
-                        }
-                      >
+                      <a href={grid.link} target={grid.target} className='text-light'>
                         {grid.title}
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>

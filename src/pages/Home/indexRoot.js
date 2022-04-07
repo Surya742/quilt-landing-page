@@ -68,7 +68,7 @@ class IndexRoot extends Component {
             <section className="section" style={{ backgroundColor: "#00E467", padding: 0, overflow: 'hidden' }}>
               <GettingStarted />
             </section>
-            <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", overflow: 'hidden' }}>
+            <section className="section" style={{ backgroundColor: "#00E467", padding: "5%", overflow: 'hidden' }} id="journey">
               <OurJourney />
             </section>
             <section style={{ backgroundColor: "#00E467", overflow: 'hidden' }}>
